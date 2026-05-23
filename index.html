@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Жиза 2.0 — RegretMaxx.ai</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+    :root {
+      color-scheme: dark;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #050505;
+    }
+
+    @keyframes subtle-glitch {
+      0% { text-shadow: 2px 0 #7dff3b, -2px 0 #ff2c2c; }
+      25% { text-shadow: -1px 0 #7dff3b, 1px 0 #ff2c2c; }
+      50% { text-shadow: 1px 0 #7dff3b, -1px 0 #ff2c2c; }
+      100% { text-shadow: 2px 0 #7dff3b, -2px 0 #ff2c2c; }
+    }
+
+    .glitch {
+      animation: subtle-glitch 1.6s infinite steps(2);
+    }
+
+    .scanline {
+      background: linear-gradient(
+        to bottom,
+        transparent 95%,
+        rgba(255,255,255,0.2) 96%
+      ),
+      linear-gradient(
+        to right,
+        transparent 95%,
+        rgba(255,255,255,0.15) 96%
+      );
+      background-size: 100% 4px, 4px 100%;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-neutral-100 overflow-x-hidden">
+
+  <main class="relative min-h-screen bg-neutral-950">
+    <!-- Background effects -->
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(130,255,34,0.15),transparent_40%),radial-gradient(circle_at_80%_10%,rgba(255,16,16,0.14),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(130,255,34,0.1),transparent_35%)]"></div>
+    <div class="pointer-events-none absolute inset-0 opacity-20 scanline"></div>
+
+    <section class="relative mx-auto max-w-7xl px-6 pt-24 pb-24 md:px-10 md:pt-32">
+      <div class="inline-flex items-center gap-2 rounded-full border border-lime-400/40 bg-lime-400/10 px-4 py-1 text-xs uppercase tracking-widest text-lime-300 mb-6">
+        <i class="fas fa-bolt"></i>
+        Жиза 2.0 / RegretMaxx.ai
+      </div>
+
+      <h1 class="glitch font-black uppercase leading-[0.9] tracking-tighter text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6">
+        А что если <span class="text-red-500">ты всё просрал?</span>
+      </h1>
+
+      <p class="max-w-2xl text-lg md:text-2xl text-neutral-300 mb-10">
+        Узнай, каким бы ты был, если бы всегда выбирал самое плохое решение.<br>
+        Добро пожаловать в симулятор персонального regret-maxxing без цензуры.
+      </p>
+
+      <button onclick="alert('Симуляция запущена... (в реальном проекте здесь будет Next.js)')"
+        class="group relative overflow-hidden rounded-xl border border-red-500/60 bg-red-600 px-8 py-5 text-xl font-bold text-white shadow-[0_0_30px_rgba(255,0,0,0.4)] hover:scale-105 transition-all duration-300">
+        <span class="relative z-10">Начать симуляцию своей хуёвой жизни</span>
+        <span class="absolute inset-0 bg-lime-400 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+      </button>
+
+      <!-- Steps -->
+      <div class="mt-16 grid md:grid-cols-3 gap-4">
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-6">
+          <p class="text-lime-400 text-xs font-bold uppercase tracking-widest mb-2">Шаг 1</p>
+          <p class="text-neutral-200">Селфи + “разрешение” на анализ твоего цифрового трэша</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-6">
+          <p class="text-lime-400 text-xs font-bold uppercase tracking-widest mb-2">Шаг 2</p>
+          <p class="text-neutral-200">Выбор уровня токсичности: Mild / Nuclear / Full Жиза</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-6">
+          <p class="text-lime-400 text-xs font-bold uppercase tracking-widest mb-2">Шаг 3</p>
+          <p class="text-neutral-200">AI-допрос по ключевым решениям: деньги, отношения, зависимости, карьера</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="relative mx-auto max-w-7xl px-6 py-20 md:px-10 border-t border-neutral-800">
+      <div class="flex items-center gap-3 mb-10">
+        <i class="fas fa-exclamation-triangle text-red-500 text-2xl"></i>
+        <h2 class="text-4xl font-extrabold uppercase tracking-wide">Почему это взорвёт ленту</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-8">
+          <i class="fas fa-fire text-lime-400 text-3xl mb-4"></i>
+          <h3 class="text-2xl font-bold mb-3">Regret Timelines</h3>
+          <p class="text-neutral-400">AI генерит реалистичные ветки твоей жизни, где каждый кринж-выбор стал твоей личной апокалипсис-сагой.</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-8">
+          <i class="fas fa-gavel text-lime-400 text-3xl mb-4"></i>
+          <h3 class="text-2xl font-bold mb-3">Regret Auction</h3>
+          <p class="text-neutral-400">3-4 версии тебя спорят, роастят и торгуются за контроль твоей реальной жизни в live-режиме.</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-8">
+          <i class="fas fa-share-alt text-lime-400 text-3xl mb-4"></i>
+          <h3 class="text-2xl font-bold mb-3">Viral Meme Engine</h3>
+          <p class="text-neutral-400">Один клик — и твой «Я-алкоголик 2031» уже летит в сторис, рилсы и чаты с друзьями.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extra blocks -->
+    <section class="mx-auto max-w-7xl px-6 pb-24 md:px-10">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="rounded-3xl border border-lime-500/30 bg-lime-500/5 p-8">
+          <p class="uppercase tracking-widest text-lime-300 text-sm font-bold mb-4">Viral Loop</p>
+          <h4 class="text-3xl font-black mb-4">Лидерборд сожалений</h4>
+          <p class="text-neutral-300">Анонимный топ «самых ебанутых regrets», челленджи недели и мем-репорты с автошарингом.</p>
+        </div>
+
+        <div class="rounded-3xl border border-red-500/30 bg-red-500/5 p-8">
+          <p class="uppercase tracking-widest text-red-300 text-sm font-bold mb-4">Sound Design / UX Mood</p>
+          <ul class="space-y-3 text-neutral-300">
+            <li>• Hero: низкочастотный синт + digital crackle + heartbeat</li>
+            <li>• Onboarding: механические клики, радио-шум и glitch</li>
+            <li>• Auction Room: агрессивный bassline + crowd noise</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-neutral-800 bg-black/70 py-10 px-6 text-center text-neutral-400 text-sm">
+      <p>Это может сильно нанести на психику. Мы предупреждали.<br>
+      Нажимая «начать», ты соглашаешься на цифровой само-роаст.</p>
+    </footer>
+  </main>
+
+</body>
+</html>
