@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #050505;
+}
+
+.noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 0.8px, transparent 0.8px);
+  background-size: 3px 3px;
+}
+
+@keyframes subtle-glitch {
+  0% { transform: translate(0); text-shadow: 2px 0 #7dff3b, -2px 0 #ff2c2c; }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(1px, -1px); text-shadow: -2px 0 #7dff3b, 2px 0 #ff2c2c; }
+  60% { transform: translate(-1px, 0); }
+  100% { transform: translate(0); text-shadow: 2px 0 #7dff3b, -2px 0 #ff2c2c; }
+}
+
+.glitch {
+  animation: subtle-glitch 1.2s infinite steps(2);
+}
